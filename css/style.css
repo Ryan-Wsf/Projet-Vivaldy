@@ -44,6 +44,14 @@ p{
     color: var(--black);
 }
 
+input,
+textarea{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -230,7 +238,7 @@ header{
     align-items: center;
 }
 
-article hr{
+hr{
     border: 1px solid var(--orange);
     width: 100%;
     margin: 20px 0px;
@@ -285,11 +293,11 @@ footer a{
 }
 
 footer h2{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     font-family: var(--shrikhand);
     color: var(--white);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding:15px;
 }
 
@@ -356,5 +364,154 @@ footer ul{
     flex-direction: row;
     gap: 20px;
 }
+}
 
+/* Page pagePro */
+
+#arrow2{
+    cursor: pointer;
+}
+
+#pageProSection1{
+    margin: auto;
+    max-width: 1440px;
+}
+
+#pageProSection1 h1{
+    text-align: center;
+}
+
+#pageProSection1 > div > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#pageProSection1 > div > div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#pageProSection1 > div > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pageProSection1 input[type="checkbox"]:checked + label .fa-thumbs-up{
+    color:black;
+    font-weight: 700;
+}
+
+#pageProSection2{
+    padding: 30px 15px;
+    border-top: solid 2px var(--orange);
+    border-bottom: solid 2px var(--orange);
+    max-width: 1440px;
+    margin: auto;
+}
+
+#pageProSection2 p{
+    padding-top: 15px;
+}
+
+#pageProSection3{
+    padding: 30px 15px;
+    max-width: 1440px;
+    margin: auto;
+    border-bottom: solid 2px var(--orange);
+}
+
+#pageProSection3 h2{
+    padding-bottom: 20px;
+}
+#pageProSection3 iframe{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+#pageProSection4{
+    padding: 30px 15px 15px 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+#pageProSection4 h2{
+    padding-bottom: 20px;
+}
+
+#pageProSection4 div a{
+    display: flex;
+    gap: 10px;
+}
+
+#pageProSection4 div i{
+    color: var(--yellow);
+}
+
+#divContact p{
+    transition: all 0.3s;
+    color: var(--black);
+}
+
+#divContact p:hover{
+    color: var(--yellow);
+    transition: all 0.3s;
+}
+
+#pageProSection4 h3{
+    padding: 30px 0px;
+}
+#divContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#iconBlack a i{
+    color: var(--black);
+    transition: all 0.3s;
+}
+
+#iconBlack{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+#iconBlack a i:hover{
+    color: var(--yellow);
+    transition: all 0.3s;
+}
+
+#pageProSection4 i{
+    font-size: 20px;
+}
+
+#pageProSection4 form{
+    display: grid;
+    gap: 10px;
+}
+
+#pageProSection4 form input, textarea{
+    padding: 7px;
+    border: 2px solid var(--orange);
+    outline: none;
+}
+
+#divForm{
+    padding-top: 20px;
+    gap: 5px;
+    display: flex;
+}
+
+#pageProSection4 button{
+    margin: 20px auto;
+    padding: 10px 35px;
+}
+
+#accept{
+    display: flex;
 }
