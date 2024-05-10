@@ -18,7 +18,7 @@
 }
 
 .max-widht-container{
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -199,13 +199,13 @@ header{
 
 #section3 > div{
     display: grid;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
 }
 
 #section3 h2{
     padding: 30px 15px;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
 }
 .fa-thumbs-up{
@@ -374,7 +374,7 @@ footer ul{
 
 #pageProSection1{
     margin: auto;
-    max-width: 1440px;
+    max-width: 1024px;
 }
 
 #pageProSection1 h1{
@@ -407,7 +407,7 @@ footer ul{
     padding: 30px 15px;
     border-top: solid 2px var(--orange);
     border-bottom: solid 2px var(--orange);
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -417,7 +417,7 @@ footer ul{
 
 #pageProSection3{
     padding: 30px 15px;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
     border-bottom: solid 2px var(--orange);
 }
@@ -433,7 +433,7 @@ footer ul{
 
 #pageProSection4{
     padding: 30px 15px 15px 15px;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -514,4 +514,44 @@ footer ul{
 
 #accept{
     display: flex;
+}
+
+/* Responsive tablette */
+
+@media screen and (min-width: 768px){
+
+#pageProSection1 > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pageProSection1 hr {
+    display: none;
+}
+
+#pageProSection1 > div > div > div {
+    gap: 10px;
+}
+
+#mainPagePro h2, h3{
+    text-align: center;
+}
+
+#divContact{
+    flex-direction: row;
+    justify-content: space-around;
+}
+}
+/* Responsive desktop */
+
+@media screen and (min-width: 1024px){
+
+header > a:nth-child(1){
+    display: none;
+}
+
+footer{
+    display: flex;
+}
 }
