@@ -17,6 +17,58 @@
     --shrikhand: 'Shrikhand', sans-serif;
 }
 
+
+.mainPagePro {
+    display: none;
+}
+
+
+.mainPagePro {
+    animation: showContent 0s ease-in-out 3s forwards;
+}
+
+
+.loader {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    animation: fadeOut 3s forwards; 
+}
+
+.cercle {
+    border: 16px solid var(--white);
+    border-top-color: var(--orange);
+    margin: auto;
+    z-index: 1001;
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    animation: fadeOut 3s forwards; 
+    animation: chargeur 3s;
+}
+
+@keyframes fadeOut {
+    to { display: none; }
+}
+
+@keyframes chargeur {
+    0% {
+        transform: rotate(0deg);
+        border-top-color: var(--orange);
+    }
+    100% {
+        transform: rotate(360deg);
+        border-color: var(--yellow);
+    }
+}
+
+
 .max-widht-container{
     max-width: 1024px;
     margin: auto;
@@ -309,6 +361,9 @@ footer h2{
     max-width: 500px;
     margin: auto;
 }
+#leadMore{
+    grid-column: 1 / 3;
+}
 
 #section3 > div{
     grid-template-columns: repeat(2, 1fr);
@@ -368,6 +423,17 @@ footer ul{
 }
 
 /* Page pagePro */
+
+
+.pagePro{
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; } 
+    100% { opacity: 1; } 
+}
 
 header > a > i{
     cursor: pointer;
